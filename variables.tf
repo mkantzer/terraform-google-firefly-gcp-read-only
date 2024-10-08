@@ -26,21 +26,21 @@ variable "firefly_endpoint" {
 }
 
 variable "resource_prefix" {
-  type = string
+  type        = string
   description = "Optional prefix to module resource names"
-  default = ""
+  default     = ""
 }
 
 variable "enable_event_driven" {
-  type = bool
+  type        = bool
   description = "Whether to create the integration as event driven or not"
-  default = true
+  default     = true
 }
 
 variable "enable_iac_auto_discover" {
-  type = bool
+  type        = bool
   description = "Whether to create the integration with IaC auto discover (searches for state files in GCS buckets)"
-  default = true
+  default     = true
 }
 
 variable "is_prod" {
